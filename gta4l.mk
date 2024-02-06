@@ -228,6 +228,11 @@ PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libstagefrighthw
 
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResCommon \
+    WifiOverlay
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -333,7 +338,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 PRODUCT_PACKAGES += \
-    WifiOverlay \
     android.hardware.wifi@1.0-service.legacy \
     hostapd \
     libwifi-hal-qcom \
