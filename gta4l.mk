@@ -150,6 +150,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@1.1.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor
 
+# DPM
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.vendor.dpm.feature=11
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
@@ -290,6 +294,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti.vendor
+
+ADDITIONAL_SYSTEM_PROPERTIES += \
+    ro.vendor.qti.va_aosp.support=1
+
+ADDITIONAL_ODM_PROPERTIES += \
+    ro.vendor.qti.va_odm.support=1
 
 # Recovery
 PRODUCT_COPY_FILES += \
