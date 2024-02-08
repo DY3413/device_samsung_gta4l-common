@@ -295,10 +295,10 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti.vendor
 
-ADDITIONAL_SYSTEM_PROPERTIES += \
+PRODUCT_SYSTEM_PROPERTIES += \
     ro.vendor.qti.va_aosp.support=1
 
-ADDITIONAL_ODM_PROPERTIES += \
+PRODUCT_ODM_PROPERTIES += \
     ro.vendor.qti.va_odm.support=1
 
 # Recovery
