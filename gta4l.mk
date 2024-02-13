@@ -110,10 +110,7 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
-    fstab.default \
-    fstab.emmc \
-    fstab.firmware \
-    fstab.ramplus \
+    fstab.qcom \
     init.qcom.early_boot.sh \
     init.qcom.factory.rc \
     init.qcom.post_boot.sh \
@@ -124,7 +121,6 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
-    init.ramplus.rc \
     init.samsung.bsp.rc \
     init.samsung.rc \
     init.target.rc \
